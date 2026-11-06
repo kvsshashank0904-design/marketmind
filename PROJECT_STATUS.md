@@ -203,3 +203,14 @@ This section supersedes prior statements about the parser, CIK validation, and t
 - Final local result: `npm test` passed 5 files / 26 tests; `npm run build` passed.
 - Browser smoke test passed for homepage, live Research Lab data, statement tabs, mobile navigation, and Portfolio Simulator.
 - No deployment was performed. Final recommendation: controlled-preview GO only after Cloudflare Pages preview validates `/api/company-facts`; unrestricted public-launch NO-GO until then.
+
+---
+
+## 10. GitHub Publication Checkpoint — 7 November 2026
+
+- Verified the source backup at `C:\Users\DELL\Desktop\MarketMind_2_0_Production\MarketMind_2_0_backup_2026-11-07`.
+- Corrected `.gitignore` so dependencies, build output, local environments, credentials, logs, TypeScript build info, and backup directories are excluded from version control.
+- Re-ran `npm install`, `npm test`, and `npm run build`: package audit reported 0 vulnerabilities, all 26 tests passed, and the production build passed.
+- Initialized the local repository, preserved the existing remote initial commit, and pushed the merged `main` branch to `https://github.com/kvsshashank0904-design/marketmind`.
+- Verified remote `main` matches commit `4c9b9b5a16b5efa4dc4cb9418c750350ebda6262` and contains application source, tests, public assets, configuration, and the Cloudflare Pages Function.
+- Cloudflare dashboard is reachable but has no active login session. Deployment and production verification remain pending Cloudflare authentication.
